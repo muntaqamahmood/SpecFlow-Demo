@@ -1,0 +1,1257 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "BoDi/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/BoDi.dll": {}
+        },
+        "runtime": {
+          "lib/net45/BoDi.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "FluentAssertions/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net47/FluentAssertions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/FluentAssertions.dll": {}
+        }
+      },
+      "Gherkin/19.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Gherkin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Gherkin.dll": {}
+        }
+      },
+      "Microsoft.CodeCoverage/17.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard1.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard1.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/17.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "17.0.0"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net45/Microsoft.NET.Test.Sdk.props": {},
+          "build/net45/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "NUnit/3.13.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/4.3.1": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "SpecFlow/3.9.74": {
+        "type": "package",
+        "dependencies": {
+          "BoDi": "1.5.0",
+          "Gherkin": "19.0.3",
+          "SpecFlow.Internal.Json": "1.0.8",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/net461/TechTalk.SpecFlow.dll": {}
+        },
+        "runtime": {
+          "lib/net461/TechTalk.SpecFlow.dll": {}
+        },
+        "build": {
+          "build/SpecFlow.targets": {}
+        }
+      },
+      "SpecFlow.Internal.Json/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SpecFlow.Internal.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SpecFlow.Internal.Json.dll": {}
+        }
+      },
+      "SpecFlow.NUnit/3.9.74": {
+        "type": "package",
+        "dependencies": {
+          "NUnit": "3.13.1",
+          "SpecFlow": "[3.9.74]",
+          "SpecFlow.Tools.MsBuild.Generation": "[3.9.74]"
+        },
+        "compile": {
+          "lib/net461/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/net461/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {}
+        },
+        "build": {
+          "build/SpecFlow.NUnit.props": {},
+          "build/SpecFlow.NUnit.targets": {}
+        }
+      },
+      "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
+        "type": "package",
+        "dependencies": {
+          "SpecFlow": "[3.9.8, 3.10.0)",
+          "SpecFlow.Internal.Json": "1.0.8",
+          "SpecFlow.Tools.MsBuild.Generation": "[3.9.8, 3.10.0)"
+        },
+        "compile": {
+          "lib/net461/LivingDoc.Dtos.dll": {},
+          "lib/net461/LivingDoc.SpecFlowPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/net461/LivingDoc.Dtos.dll": {},
+          "lib/net461/LivingDoc.SpecFlowPlugin.dll": {}
+        },
+        "build": {
+          "build/SpecFlow.Plus.LivingDocPlugin.props": {},
+          "build/SpecFlow.Plus.LivingDocPlugin.targets": {}
+        }
+      },
+      "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
+        "type": "package",
+        "dependencies": {
+          "SpecFlow": "[3.9.74]"
+        },
+        "build": {
+          "build/SpecFlow.Tools.MsBuild.Generation.props": {},
+          "build/SpecFlow.Tools.MsBuild.Generation.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/SpecFlow.Tools.MsBuild.Generation.props": {}
+        }
+      },
+      "SpecRun.Runner/3.9.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "15.0.0"
+        },
+        "build": {
+          "build/SpecRun.Runner.props": {},
+          "build/SpecRun.Runner.targets": {}
+        }
+      },
+      "SpecRun.SpecFlow/3.9.7": {
+        "type": "package",
+        "dependencies": {
+          "SpecRun.SpecFlow.3-9-0": "[3.9.7]"
+        }
+      },
+      "SpecRun.SpecFlow.3-9-0/3.9.7": {
+        "type": "package",
+        "dependencies": {
+          "SpecFlow": "[3.9.8, 3.10.0)",
+          "SpecFlow.Tools.MsBuild.Generation": "[3.9.8, 3.10.0)",
+          "SpecRun.Runner": "3.9.7"
+        },
+        "compile": {
+          "lib/net461/SpecRun.Runtime.SpecFlowPlugin.dll": {},
+          "lib/net461/TechTalk.SpecRun.Common.dll": {},
+          "lib/net461/TechTalk.SpecRun.dll": {}
+        },
+        "runtime": {
+          "lib/net461/SpecRun.Runtime.SpecFlowPlugin.dll": {},
+          "lib/net461/TechTalk.SpecRun.Common.dll": {},
+          "lib/net461/TechTalk.SpecRun.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/SpecRun.SpecFlow.3-9-0.props": {},
+          "build/SpecRun.SpecFlow.3-9-0.targets": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BoDi/1.5.0": {
+      "sha512": "CzIPzdIAFSd2zuLxI+0K9s48Qv3HQDbWiApn9h96j284rHs2bSPrn/PMca3mi4q3xLSEqOp+GUJ6+mXDD9prKg==",
+      "type": "package",
+      "path": "bodi/1.5.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bodi.1.5.0.nupkg.sha512",
+        "bodi.nuspec",
+        "build/_._",
+        "content/_._",
+        "lib/net45/BoDi.dll",
+        "lib/net45/BoDi.pdb",
+        "lib/netstandard2.0/BoDi.dll",
+        "lib/netstandard2.0/BoDi.pdb",
+        "tools/_._"
+      ]
+    },
+    "FluentAssertions/6.2.0": {
+      "sha512": "5YOZLB0Tay1bw+wEYZTAZlPThQ/Yntk1HSPJYluMd5PW/Xg9E8I1mRC03AKRsnuANBR0kYaHq0NX1fg7RgrGNA==",
+      "type": "package",
+      "path": "fluentassertions/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FluentAssertions.png",
+        "fluentassertions.6.2.0.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net47/FluentAssertions.dll",
+        "lib/net47/FluentAssertions.pdb",
+        "lib/net47/FluentAssertions.xml",
+        "lib/netcoreapp2.1/FluentAssertions.dll",
+        "lib/netcoreapp2.1/FluentAssertions.pdb",
+        "lib/netcoreapp2.1/FluentAssertions.xml",
+        "lib/netcoreapp3.0/FluentAssertions.dll",
+        "lib/netcoreapp3.0/FluentAssertions.pdb",
+        "lib/netcoreapp3.0/FluentAssertions.xml",
+        "lib/netstandard2.0/FluentAssertions.dll",
+        "lib/netstandard2.0/FluentAssertions.pdb",
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
+      ]
+    },
+    "Gherkin/19.0.3": {
+      "sha512": "kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
+      "type": "package",
+      "path": "gherkin/19.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cucumber-mark-green-128.png",
+        "gherkin.19.0.3.nupkg.sha512",
+        "gherkin.nuspec",
+        "lib/net45/Gherkin.dll",
+        "lib/net45/Gherkin.xml",
+        "lib/netstandard2.0/Gherkin.dll",
+        "lib/netstandard2.0/Gherkin.xml"
+      ]
+    },
+    "Microsoft.CodeCoverage/17.0.0": {
+      "sha512": "+B+09FPYBtf+cXfZOPIgpnP5mzLq5QdlBo+JEFy9CdqBaWHWE/YMY0Mos9uDsZhcgFegJm9GigAgMyqBZyfq+Q==",
+      "type": "package",
+      "path": "microsoft.codecoverage/17.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE_NET.txt",
+        "ThirdPartyNotices.txt",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
+        "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/VanguardInstrumentationProfiler_x86.config",
+        "build/netstandard1.0/CodeCoverage/amd64/CodeCoverage.exe",
+        "build/netstandard1.0/CodeCoverage/amd64/VanguardInstrumentationProfiler_x64.config",
+        "build/netstandard1.0/CodeCoverage/amd64/covrun64.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcdis140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcp140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/msvcp140_atomic_wait.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140.dll",
+        "build/netstandard1.0/CodeCoverage/amd64/vcruntime140_1.dll",
+        "build/netstandard1.0/CodeCoverage/codecoveragemessages.dll",
+        "build/netstandard1.0/CodeCoverage/coreclr/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "build/netstandard1.0/CodeCoverage/covrun32.dll",
+        "build/netstandard1.0/CodeCoverage/msdia140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcdis140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcp140.dll",
+        "build/netstandard1.0/CodeCoverage/msvcp140_atomic_wait.dll",
+        "build/netstandard1.0/CodeCoverage/vcruntime140.dll",
+        "build/netstandard1.0/InstrumentationEngine/alpine/x64/ProductionBreakpoints_x64.config",
+        "build/netstandard1.0/InstrumentationEngine/alpine/x64/libCoverageInstrumentationMethod.so",
+        "build/netstandard1.0/InstrumentationEngine/alpine/x64/libInstrumentationEngine.so",
+        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/ProductionBreakpoints_x64.config",
+        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/libCoverageInstrumentationMethod.so",
+        "build/netstandard1.0/InstrumentationEngine/ubuntu/x64/libInstrumentationEngine.so",
+        "build/netstandard1.0/InstrumentationEngine/x64/MicrosoftInstrumentationEngine_x64.dll",
+        "build/netstandard1.0/InstrumentationEngine/x86/MicrosoftInstrumentationEngine_x86.dll",
+        "build/netstandard1.0/Microsoft.CodeCoverage.props",
+        "build/netstandard1.0/Microsoft.CodeCoverage.targets",
+        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Core.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Instrumentation.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.Coverage.Interprocess.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.TraceDataCollector.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/ThirdPartyNotices.txt",
+        "build/netstandard1.0/cs/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/de/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/es/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/fr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/it/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ja/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ko/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pl/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/pt-BR/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/ru/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/tr/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
+        "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
+        "microsoft.codecoverage.17.0.0.nupkg.sha512",
+        "microsoft.codecoverage.nuspec"
+      ]
+    },
+    "Microsoft.NET.Test.Sdk/17.0.0": {
+      "sha512": "fJcnMY3jX1MzJvhGvUWauRhU5eQsOaHdwlrcnI3NabBhbi8WLAkMFI8d0YnewA/+b9q/U7vbhp8Xmh1vJ05FYQ==",
+      "type": "package",
+      "path": "microsoft.net.test.sdk/17.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE_NET.txt",
+        "build/net40/Microsoft.NET.Test.Sdk.props",
+        "build/net40/Microsoft.NET.Test.Sdk.targets",
+        "build/net45/Microsoft.NET.Test.Sdk.props",
+        "build/net45/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp1.0/Microsoft.NET.Test.Sdk.targets",
+        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs",
+        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.fs",
+        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.vb",
+        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.props",
+        "build/netcoreapp2.1/Microsoft.NET.Test.Sdk.targets",
+        "build/uap10.0/Microsoft.NET.Test.Sdk.props",
+        "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
+        "lib/net40/_._",
+        "lib/net45/_._",
+        "lib/netcoreapp1.0/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/uap10.0/_._",
+        "microsoft.net.test.sdk.17.0.0.nupkg.sha512",
+        "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "NUnit/3.13.1": {
+      "sha512": "vWBvrSelmTYwqHWvO3dA63z7cOpaFR/3nJ9MMVLBkWeaWa7oiglPPm5g1h96B4i2XXqjFexxhR5MyMjmIJYPfg==",
+      "type": "package",
+      "path": "nunit/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.xml",
+        "nunit.3.13.1.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "NUnit3TestAdapter/4.3.1": {
+      "sha512": "R+bGFtsUpLWywjT1nb3xMmoVa2AIw6ClIGC+XjW9lYE8hwJeos+NdR/mtg4RXbBphmC9epALrnUc6MM7mUG8+Q==",
+      "type": "package",
+      "path": "nunit3testadapter/4.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/NUnit3.TestAdapter.dll",
+        "build/net35/NUnit3.TestAdapter.pdb",
+        "build/net35/NUnit3TestAdapter.props",
+        "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.core.dll",
+        "build/net35/nunit.engine.dll",
+        "build/net35/testcentric.engine.metadata.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp3.1/NUnit3TestAdapter.props",
+        "build/netcoreapp3.1/nunit.engine.api.dll",
+        "build/netcoreapp3.1/nunit.engine.core.dll",
+        "build/netcoreapp3.1/nunit.engine.dll",
+        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "nunit3testadapter.4.3.1.nupkg.sha512",
+        "nunit3testadapter.nuspec"
+      ]
+    },
+    "SpecFlow/3.9.74": {
+      "sha512": "n6kcg9ZeQWxqJFoT23SsFT89U1QQNwvcN9pAX5alB6ZPr6K0p5D5nGIJ1PZsSaFaRFutiwQ+DicmxBCPAZVYIA==",
+      "type": "package",
+      "path": "specflow/3.9.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "Licenses/BoDi-LICENSE-Apache2.txt",
+        "Licenses/Gherkin-LICENSE-MIT.txt",
+        "Licenses/Newtonsoft.Json-LICENSE-MIT.md",
+        "Licenses/System.ValueTuple-LICENSE-MIT.txt",
+        "build/SpecFlow.targets",
+        "images/specflow-icon.png",
+        "lib/net461/TechTalk.SpecFlow.ExternalAnnotations.xml",
+        "lib/net461/TechTalk.SpecFlow.dll",
+        "lib/net461/TechTalk.SpecFlow.pdb",
+        "lib/net461/TechTalk.SpecFlow.xml",
+        "lib/netstandard2.0/TechTalk.SpecFlow.ExternalAnnotations.xml",
+        "lib/netstandard2.0/TechTalk.SpecFlow.dll",
+        "lib/netstandard2.0/TechTalk.SpecFlow.pdb",
+        "lib/netstandard2.0/TechTalk.SpecFlow.xml",
+        "specflow.3.9.74.nupkg.sha512",
+        "specflow.nuspec"
+      ]
+    },
+    "SpecFlow.Internal.Json/1.0.8": {
+      "sha512": "lVCC/Rie7N5rFoc7YxPS0nneLfsWSTIMMlkndwxhaD8MxBp3Bsv1HeiVjVwXCjWaQeoqZcvIy52fF5Xit00ZLw==",
+      "type": "package",
+      "path": "specflow.internal.json/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net45/SpecFlow.Internal.Json.dll",
+        "lib/netstandard2.0/SpecFlow.Internal.Json.dll",
+        "specflow.internal.json.1.0.8.nupkg.sha512",
+        "specflow.internal.json.nuspec"
+      ]
+    },
+    "SpecFlow.NUnit/3.9.74": {
+      "sha512": "nMPLztTT5IZDMnvNCUxklqaM+agn4kjuNy/qAcYQQOxau2G1MF73UxhL9OXjJQaEuPuyT8gJvXudOYCFZWztxA==",
+      "type": "package",
+      "path": "specflow.nunit/3.9.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/NUnit.AssemblyHooks.cs",
+        "build/NUnit.AssemblyHooks.vb",
+        "build/SpecFlow.NUnit.props",
+        "build/SpecFlow.NUnit.targets",
+        "build/net461/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
+        "build/net461/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
+        "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.deps.json",
+        "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
+        "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.deps.json",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
+        "build/netcoreapp2.1/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
+        "images/specflow-icon.png",
+        "lib/net461/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
+        "lib/net461/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
+        "lib/net5.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
+        "lib/net5.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
+        "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
+        "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
+        "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
+        "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
+        "specflow.nunit.3.9.74.nupkg.sha512",
+        "specflow.nunit.nuspec"
+      ]
+    },
+    "SpecFlow.Plus.LivingDocPlugin/3.9.57": {
+      "sha512": "hH/jTxLVWS/QlCGvNMk4BSI/mcJhlnEjx4xWjP4dLUWek/CmSST49NAzQVvZpoqwrkIErMAzWRV/PFFvyLiShA==",
+      "type": "package",
+      "path": "specflow.plus.livingdocplugin/3.9.57",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/SpecFlow.Plus.LivingDocPlugin.props",
+        "build/SpecFlow.Plus.LivingDocPlugin.targets",
+        "images/specflow-icon.png",
+        "lib/net461/LivingDoc.Dtos.dll",
+        "lib/net461/LivingDoc.SpecFlowPlugin.dll",
+        "lib/netstandard2.0/LivingDoc.Dtos.dll",
+        "lib/netstandard2.0/LivingDoc.SpecFlowPlugin.dll",
+        "specflow.plus.livingdocplugin.3.9.57.nupkg.sha512",
+        "specflow.plus.livingdocplugin.nuspec"
+      ]
+    },
+    "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
+      "sha512": "I/9OvmKOohJqIUNJ0xGYJCWfL6WKDaes8OoOAD/2yhGX+tzC5ofs9yqkP9Cu/xfnIx+11IR3pZs7YhBhGAcgWQ==",
+      "type": "package",
+      "path": "specflow.tools.msbuild.generation/3.9.74",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/CPS/Buildsystem/CpsExtension.DesignTime.targets",
+        "build/CPS/Buildsystem/Rules/FeatureFileType.xaml",
+        "build/CPS/Buildsystem/Rules/ProjectItemsSchema.xaml",
+        "build/SpecFlow.Tools.MsBuild.Generation.props",
+        "build/SpecFlow.Tools.MsBuild.Generation.targets",
+        "build/SpecFlow.Tools.MsBuild.Generation.tasks",
+        "buildMultiTargeting/SpecFlow.Tools.MsBuild.Generation.props",
+        "images/specflow-icon.png",
+        "licenses/BoDi-LICENSE-Apache2.txt",
+        "licenses/Gherkin-LICENSE-MIT.txt",
+        "licenses/Newtonsoft.Json-LICENSE-MIT.md",
+        "licenses/System.ValueTuple-LICENSE-MIT.txt",
+        "specflow.tools.msbuild.generation.3.9.74.nupkg.sha512",
+        "specflow.tools.msbuild.generation.nuspec",
+        "tasks/net461/BoDi.dll",
+        "tasks/net461/Gherkin.dll",
+        "tasks/net461/Microsoft.Build.Framework.dll",
+        "tasks/net461/Microsoft.Build.Tasks.Core.dll",
+        "tasks/net461/Microsoft.Build.Utilities.Core.dll",
+        "tasks/net461/Microsoft.Build.dll",
+        "tasks/net461/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
+        "tasks/net461/Microsoft.VisualStudio.Composition.dll",
+        "tasks/net461/Microsoft.VisualStudio.ProjectSystem.Interop.dll",
+        "tasks/net461/Microsoft.VisualStudio.ProjectSystem.VS.dll",
+        "tasks/net461/Microsoft.VisualStudio.ProjectSystem.dll",
+        "tasks/net461/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tasks/net461/Microsoft.VisualStudio.Threading.dll",
+        "tasks/net461/Microsoft.VisualStudio.Validation.dll",
+        "tasks/net461/Microsoft.Win32.Primitives.dll",
+        "tasks/net461/SpecFlow.Internal.Json.dll",
+        "tasks/net461/SpecFlow.Tools.MsBuild.Generation.dll",
+        "tasks/net461/System.AppContext.dll",
+        "tasks/net461/System.CodeDom.dll",
+        "tasks/net461/System.Collections.Concurrent.dll",
+        "tasks/net461/System.Collections.Immutable.dll",
+        "tasks/net461/System.Collections.NonGeneric.dll",
+        "tasks/net461/System.Collections.Specialized.dll",
+        "tasks/net461/System.Collections.dll",
+        "tasks/net461/System.ComponentModel.EventBasedAsync.dll",
+        "tasks/net461/System.ComponentModel.Primitives.dll",
+        "tasks/net461/System.ComponentModel.TypeConverter.dll",
+        "tasks/net461/System.ComponentModel.dll",
+        "tasks/net461/System.Composition.AttributedModel.dll",
+        "tasks/net461/System.Composition.Convention.dll",
+        "tasks/net461/System.Composition.Hosting.dll",
+        "tasks/net461/System.Composition.Runtime.dll",
+        "tasks/net461/System.Composition.TypedParts.dll",
+        "tasks/net461/System.Console.dll",
+        "tasks/net461/System.Data.Common.dll",
+        "tasks/net461/System.Diagnostics.Contracts.dll",
+        "tasks/net461/System.Diagnostics.Debug.dll",
+        "tasks/net461/System.Diagnostics.FileVersionInfo.dll",
+        "tasks/net461/System.Diagnostics.Process.dll",
+        "tasks/net461/System.Diagnostics.StackTrace.dll",
+        "tasks/net461/System.Diagnostics.TextWriterTraceListener.dll",
+        "tasks/net461/System.Diagnostics.Tools.dll",
+        "tasks/net461/System.Diagnostics.TraceSource.dll",
+        "tasks/net461/System.Diagnostics.Tracing.dll",
+        "tasks/net461/System.Drawing.Primitives.dll",
+        "tasks/net461/System.Dynamic.Runtime.dll",
+        "tasks/net461/System.Globalization.Calendars.dll",
+        "tasks/net461/System.Globalization.Extensions.dll",
+        "tasks/net461/System.Globalization.dll",
+        "tasks/net461/System.IO.Compression.ZipFile.dll",
+        "tasks/net461/System.IO.Compression.dll",
+        "tasks/net461/System.IO.FileSystem.DriveInfo.dll",
+        "tasks/net461/System.IO.FileSystem.Primitives.dll",
+        "tasks/net461/System.IO.FileSystem.Watcher.dll",
+        "tasks/net461/System.IO.FileSystem.dll",
+        "tasks/net461/System.IO.IsolatedStorage.dll",
+        "tasks/net461/System.IO.MemoryMappedFiles.dll",
+        "tasks/net461/System.IO.Pipes.dll",
+        "tasks/net461/System.IO.UnmanagedMemoryStream.dll",
+        "tasks/net461/System.IO.dll",
+        "tasks/net461/System.Linq.Expressions.dll",
+        "tasks/net461/System.Linq.Parallel.dll",
+        "tasks/net461/System.Linq.Queryable.dll",
+        "tasks/net461/System.Linq.dll",
+        "tasks/net461/System.Net.Http.dll",
+        "tasks/net461/System.Net.NameResolution.dll",
+        "tasks/net461/System.Net.NetworkInformation.dll",
+        "tasks/net461/System.Net.Ping.dll",
+        "tasks/net461/System.Net.Primitives.dll",
+        "tasks/net461/System.Net.Requests.dll",
+        "tasks/net461/System.Net.Security.dll",
+        "tasks/net461/System.Net.Sockets.dll",
+        "tasks/net461/System.Net.WebHeaderCollection.dll",
+        "tasks/net461/System.Net.WebSockets.Client.dll",
+        "tasks/net461/System.Net.WebSockets.dll",
+        "tasks/net461/System.ObjectModel.dll",
+        "tasks/net461/System.Reflection.Extensions.dll",
+        "tasks/net461/System.Reflection.Metadata.dll",
+        "tasks/net461/System.Reflection.Primitives.dll",
+        "tasks/net461/System.Reflection.dll",
+        "tasks/net461/System.Resources.Reader.dll",
+        "tasks/net461/System.Resources.ResourceManager.dll",
+        "tasks/net461/System.Resources.Writer.dll",
+        "tasks/net461/System.Runtime.CompilerServices.VisualC.dll",
+        "tasks/net461/System.Runtime.Extensions.dll",
+        "tasks/net461/System.Runtime.Handles.dll",
+        "tasks/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "tasks/net461/System.Runtime.InteropServices.dll",
+        "tasks/net461/System.Runtime.Numerics.dll",
+        "tasks/net461/System.Runtime.Serialization.Formatters.dll",
+        "tasks/net461/System.Runtime.Serialization.Json.dll",
+        "tasks/net461/System.Runtime.Serialization.Primitives.dll",
+        "tasks/net461/System.Runtime.Serialization.Xml.dll",
+        "tasks/net461/System.Runtime.dll",
+        "tasks/net461/System.Security.Claims.dll",
+        "tasks/net461/System.Security.Cryptography.Algorithms.dll",
+        "tasks/net461/System.Security.Cryptography.Csp.dll",
+        "tasks/net461/System.Security.Cryptography.Encoding.dll",
+        "tasks/net461/System.Security.Cryptography.Primitives.dll",
+        "tasks/net461/System.Security.Cryptography.X509Certificates.dll",
+        "tasks/net461/System.Security.Principal.dll",
+        "tasks/net461/System.Security.SecureString.dll",
+        "tasks/net461/System.Text.Encoding.Extensions.dll",
+        "tasks/net461/System.Text.Encoding.dll",
+        "tasks/net461/System.Text.RegularExpressions.dll",
+        "tasks/net461/System.Threading.Overlapped.dll",
+        "tasks/net461/System.Threading.Tasks.Dataflow.dll",
+        "tasks/net461/System.Threading.Tasks.Parallel.dll",
+        "tasks/net461/System.Threading.Tasks.dll",
+        "tasks/net461/System.Threading.Thread.dll",
+        "tasks/net461/System.Threading.ThreadPool.dll",
+        "tasks/net461/System.Threading.Timer.dll",
+        "tasks/net461/System.Threading.dll",
+        "tasks/net461/System.ValueTuple.dll",
+        "tasks/net461/System.Xml.ReaderWriter.dll",
+        "tasks/net461/System.Xml.XDocument.dll",
+        "tasks/net461/System.Xml.XPath.XDocument.dll",
+        "tasks/net461/System.Xml.XPath.dll",
+        "tasks/net461/System.Xml.XmlDocument.dll",
+        "tasks/net461/System.Xml.XmlSerializer.dll",
+        "tasks/net461/TechTalk.SpecFlow.Generator.dll",
+        "tasks/net461/TechTalk.SpecFlow.Parser.dll",
+        "tasks/net461/TechTalk.SpecFlow.Utils.dll",
+        "tasks/net461/TechTalk.SpecFlow.dll",
+        "tasks/net461/netstandard.dll",
+        "tasks/net5.0/BoDi.dll",
+        "tasks/net5.0/Gherkin.dll",
+        "tasks/net5.0/Microsoft.Build.Framework.dll",
+        "tasks/net5.0/Microsoft.Build.Tasks.Core.dll",
+        "tasks/net5.0/Microsoft.Build.Utilities.Core.dll",
+        "tasks/net5.0/Microsoft.Build.dll",
+        "tasks/net5.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tasks/net5.0/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/net5.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
+        "tasks/net5.0/Microsoft.VisualStudio.Composition.dll",
+        "tasks/net5.0/Microsoft.VisualStudio.Threading.dll",
+        "tasks/net5.0/Microsoft.VisualStudio.Validation.dll",
+        "tasks/net5.0/Newtonsoft.Json.dll",
+        "tasks/net5.0/SpecFlow.Internal.Json.dll",
+        "tasks/net5.0/SpecFlow.Tools.MsBuild.Generation.deps.json",
+        "tasks/net5.0/SpecFlow.Tools.MsBuild.Generation.dll",
+        "tasks/net5.0/System.CodeDom.dll",
+        "tasks/net5.0/System.ComponentModel.Composition.dll",
+        "tasks/net5.0/System.Composition.AttributedModel.dll",
+        "tasks/net5.0/System.Composition.Convention.dll",
+        "tasks/net5.0/System.Composition.Hosting.dll",
+        "tasks/net5.0/System.Composition.Runtime.dll",
+        "tasks/net5.0/System.Composition.TypedParts.dll",
+        "tasks/net5.0/System.Configuration.ConfigurationManager.dll",
+        "tasks/net5.0/System.Security.Cryptography.ProtectedData.dll",
+        "tasks/net5.0/System.Security.Permissions.dll",
+        "tasks/net5.0/TechTalk.SpecFlow.Generator.dll",
+        "tasks/net5.0/TechTalk.SpecFlow.Parser.dll",
+        "tasks/net5.0/TechTalk.SpecFlow.Utils.dll",
+        "tasks/net5.0/TechTalk.SpecFlow.dll",
+        "tasks/net6.0/BoDi.dll",
+        "tasks/net6.0/Gherkin.dll",
+        "tasks/net6.0/Microsoft.Build.Framework.dll",
+        "tasks/net6.0/Microsoft.Build.Tasks.Core.dll",
+        "tasks/net6.0/Microsoft.Build.Utilities.Core.dll",
+        "tasks/net6.0/Microsoft.Build.dll",
+        "tasks/net6.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tasks/net6.0/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Composition.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Threading.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Validation.dll",
+        "tasks/net6.0/Newtonsoft.Json.dll",
+        "tasks/net6.0/SpecFlow.Internal.Json.dll",
+        "tasks/net6.0/SpecFlow.Tools.MsBuild.Generation.deps.json",
+        "tasks/net6.0/SpecFlow.Tools.MsBuild.Generation.dll",
+        "tasks/net6.0/System.CodeDom.dll",
+        "tasks/net6.0/System.ComponentModel.Composition.dll",
+        "tasks/net6.0/System.Composition.AttributedModel.dll",
+        "tasks/net6.0/System.Composition.Convention.dll",
+        "tasks/net6.0/System.Composition.Hosting.dll",
+        "tasks/net6.0/System.Composition.Runtime.dll",
+        "tasks/net6.0/System.Composition.TypedParts.dll",
+        "tasks/net6.0/System.Configuration.ConfigurationManager.dll",
+        "tasks/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "tasks/net6.0/System.Security.Permissions.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Generator.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Parser.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Utils.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.dll",
+        "tasks/netcoreapp2.1/BoDi.dll",
+        "tasks/netcoreapp2.1/Gherkin.dll",
+        "tasks/netcoreapp2.1/Microsoft.Build.Framework.dll",
+        "tasks/netcoreapp2.1/Microsoft.Build.Tasks.Core.dll",
+        "tasks/netcoreapp2.1/Microsoft.Build.Utilities.Core.dll",
+        "tasks/netcoreapp2.1/Microsoft.Build.dll",
+        "tasks/netcoreapp2.1/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/netcoreapp2.1/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
+        "tasks/netcoreapp2.1/Microsoft.VisualStudio.Composition.dll",
+        "tasks/netcoreapp2.1/Microsoft.VisualStudio.Threading.dll",
+        "tasks/netcoreapp2.1/Microsoft.VisualStudio.Validation.dll",
+        "tasks/netcoreapp2.1/Newtonsoft.Json.dll",
+        "tasks/netcoreapp2.1/SpecFlow.Internal.Json.dll",
+        "tasks/netcoreapp2.1/SpecFlow.Tools.MsBuild.Generation.deps.json",
+        "tasks/netcoreapp2.1/SpecFlow.Tools.MsBuild.Generation.dll",
+        "tasks/netcoreapp2.1/System.CodeDom.dll",
+        "tasks/netcoreapp2.1/System.ComponentModel.Composition.dll",
+        "tasks/netcoreapp2.1/System.Composition.AttributedModel.dll",
+        "tasks/netcoreapp2.1/System.Composition.Convention.dll",
+        "tasks/netcoreapp2.1/System.Composition.Hosting.dll",
+        "tasks/netcoreapp2.1/System.Composition.Runtime.dll",
+        "tasks/netcoreapp2.1/System.Composition.TypedParts.dll",
+        "tasks/netcoreapp2.1/System.Configuration.ConfigurationManager.dll",
+        "tasks/netcoreapp2.1/System.Security.Cryptography.ProtectedData.dll",
+        "tasks/netcoreapp2.1/System.Security.Permissions.dll",
+        "tasks/netcoreapp2.1/System.Text.Encoding.CodePages.dll",
+        "tasks/netcoreapp2.1/TechTalk.SpecFlow.Generator.dll",
+        "tasks/netcoreapp2.1/TechTalk.SpecFlow.Parser.dll",
+        "tasks/netcoreapp2.1/TechTalk.SpecFlow.Utils.dll",
+        "tasks/netcoreapp2.1/TechTalk.SpecFlow.dll"
+      ]
+    },
+    "SpecRun.Runner/3.9.7": {
+      "sha512": "qi4xi8tigrd6CsmCbUKneuiGSZL/k97mkVtTjwoAYvpz4+o+J0lZL6jB1BYXMlxuh42mLIJt7ohQXG68o0+sVw==",
+      "type": "package",
+      "path": "specrun.runner/3.9.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SpecRun.Runner.props",
+        "build/SpecRun.Runner.targets",
+        "docs/BoDi-LICENSE-Apache2.txt",
+        "docs/FSharp.Core-LICENSE-MIT.txt",
+        "docs/Gherkin-LICENSE-MIT.txt",
+        "docs/Newtonsoft.Json-LICENSE-MIT.md",
+        "docs/RazorEngine-LICENSE-Apache2.md",
+        "docs/RestSharp-LICENSE-Apache2.txt",
+        "docs/Sample.runsettings",
+        "docs/readme.txt",
+        "images/specflow-icon.png",
+        "readme.txt",
+        "specrun.runner.3.9.7.nupkg.sha512",
+        "specrun.runner.nuspec",
+        "templates/CucumberJson.cshtml",
+        "templates/ReportTemplate.cshtml",
+        "templates/ReportTemplate_Features.cshtml",
+        "templates/ReportTemplate_Json.cshtml",
+        "templates/ReportTemplate_Xml.cshtml",
+        "templates/SpecRunTestProfile.xsd",
+        "templates/SpecRunTestProfile_2011_09.xsd",
+        "tools/net461/BoDi.dll",
+        "tools/net461/CommandLine.dll",
+        "tools/net461/FSharp.Core.dll",
+        "tools/net461/Microsoft.Data.Services.Client.dll",
+        "tools/net461/Microsoft.IdentityModel.Logging.dll",
+        "tools/net461/Microsoft.IdentityModel.Tokens.dll",
+        "tools/net461/Microsoft.VisualStudio.Threading.dll",
+        "tools/net461/Microsoft.VisualStudio.Validation.dll",
+        "tools/net461/Microsoft.Web.Publishing.Tasks.dll",
+        "tools/net461/Newtonsoft.Json.dll",
+        "tools/net461/RazorEngine.dll",
+        "tools/net461/RestSharp.dll",
+        "tools/net461/SpecFlow.Plus.Runner.Reporting.exe",
+        "tools/net461/SpecFlow.Plus.Runner.Reporting.exe.config",
+        "tools/net461/SpecFlow.Plus.Shared.dll",
+        "tools/net461/SpecRun.exe",
+        "tools/net461/SpecRun.exe.config",
+        "tools/net461/SpecRunTestProfile.xsd",
+        "tools/net461/SpecRunTestProfile_2011_09.xsd",
+        "tools/net461/StreamJsonRpc.dll",
+        "tools/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "tools/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "tools/net461/System.Web.Razor.dll",
+        "tools/net461/TechTalk.SpecFlow.Plus.RPC.dll",
+        "tools/net461/TechTalk.SpecRun.Common.dll",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.AnyCPU.clr40.exe",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.AnyCPU.clr40.exe.config",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.dll",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.dll.config",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.x86.clr40.exe",
+        "tools/net461/TechTalk.SpecRun.Framework.Executor.x86.clr40.exe.config",
+        "tools/net461/TechTalk.SpecRun.Framework.Interfaces.dll",
+        "tools/net461/TechTalk.SpecRun.Framework.Utils.dll",
+        "tools/net461/TechTalk.SpecRun.Framework.dll",
+        "tools/net461/TechTalk.SpecRun.Framework.dll.config",
+        "tools/net461/TechTalk.SpecRun.Server.CommandClient.dll",
+        "tools/net461/TechTalk.SpecRun.Server.Commands.dll",
+        "tools/net461/TechTalk.SpecRun.Server.ReadModelClient.dll",
+        "tools/net461/TechTalk.SpecRun.VisualStudio.TestAdapter.dll",
+        "tools/net461/TechTalk.SpecRun.VisualStudio.TestAdapter.dll.config",
+        "tools/net461/TechTalk.SpecRun.dll",
+        "tools/net5.0/BoDi.dll",
+        "tools/net5.0/CommandLine.dll",
+        "tools/net5.0/FSharp.Core.dll",
+        "tools/net5.0/Microsoft.IdentityModel.Logging.dll",
+        "tools/net5.0/Microsoft.IdentityModel.Tokens.dll",
+        "tools/net5.0/Microsoft.VisualStudio.Threading.dll",
+        "tools/net5.0/Microsoft.VisualStudio.Validation.dll",
+        "tools/net5.0/Newtonsoft.Json.dll",
+        "tools/net5.0/SpecFlow.Plus.Shared.dll",
+        "tools/net5.0/StreamJsonRpc.dll",
+        "tools/net5.0/System.Configuration.ConfigurationManager.dll",
+        "tools/net5.0/System.IdentityModel.Tokens.Jwt.dll",
+        "tools/net5.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net5.0/System.Security.Permissions.dll",
+        "tools/net5.0/TechTalk.SpecFlow.Plus.RPC.dll",
+        "tools/net5.0/TechTalk.SpecRun.Common.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.dll.config",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.pdb",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.anycpu.net5_0.runtimeconfig.json",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.dll.config",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.x86.net5_0.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.x86.net5_0.dll.config",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.x86.net5_0.pdb",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Executor.x86.net5_0.runtimeconfig.json",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Interfaces.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.Utils.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.dll",
+        "tools/net5.0/TechTalk.SpecRun.Framework.dll.config",
+        "tools/net5.0/TechTalk.SpecRun.VisualStudio.TestAdapter.dll",
+        "tools/net5.0/TechTalk.SpecRun.VisualStudio.TestAdapter.dll.config",
+        "tools/net5.0/TechTalk.SpecRun.dll",
+        "tools/netcoreapp2.1/BoDi.dll",
+        "tools/netcoreapp2.1/CommandLine.dll",
+        "tools/netcoreapp2.1/FSharp.Core.dll",
+        "tools/netcoreapp2.1/Microsoft.IdentityModel.Logging.dll",
+        "tools/netcoreapp2.1/Microsoft.IdentityModel.Tokens.dll",
+        "tools/netcoreapp2.1/Microsoft.VisualStudio.Threading.dll",
+        "tools/netcoreapp2.1/Microsoft.VisualStudio.Validation.dll",
+        "tools/netcoreapp2.1/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.1/SpecFlow.Plus.Shared.dll",
+        "tools/netcoreapp2.1/StreamJsonRpc.dll",
+        "tools/netcoreapp2.1/System.Configuration.ConfigurationManager.dll",
+        "tools/netcoreapp2.1/System.IdentityModel.Tokens.Jwt.dll",
+        "tools/netcoreapp2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/netcoreapp2.1/System.Security.Cryptography.ProtectedData.dll",
+        "tools/netcoreapp2.1/System.Security.Permissions.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecFlow.Plus.RPC.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Common.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp2_1.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp2_1.dll.config",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp2_1.pdb",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp2_1.runtimeconfig.json",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.dll.config",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp2_1.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp2_1.dll.config",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp2_1.pdb",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp2_1.runtimeconfig.json",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Interfaces.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.Utils.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.Framework.dll.config",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.VisualStudio.TestAdapter.dll",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.VisualStudio.TestAdapter.dll.config",
+        "tools/netcoreapp2.1/TechTalk.SpecRun.dll",
+        "tools/netcoreapp3.1/BoDi.dll",
+        "tools/netcoreapp3.1/CommandLine.dll",
+        "tools/netcoreapp3.1/FSharp.Core.dll",
+        "tools/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll",
+        "tools/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.Threading.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.Validation.dll",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/SpecFlow.Plus.Shared.dll",
+        "tools/netcoreapp3.1/StreamJsonRpc.dll",
+        "tools/netcoreapp3.1/System.Configuration.ConfigurationManager.dll",
+        "tools/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll",
+        "tools/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll",
+        "tools/netcoreapp3.1/System.Security.Permissions.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecFlow.Plus.RPC.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Common.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.dll.config",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.pdb",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.anycpu.netcoreapp3_1.runtimeconfig.json",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.dll.config",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp3_1.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp3_1.dll.config",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp3_1.pdb",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Executor.x86.netcoreapp3_1.runtimeconfig.json",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Interfaces.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.Utils.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.Framework.dll.config",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.VisualStudio.TestAdapter.dll",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.VisualStudio.TestAdapter.dll.config",
+        "tools/netcoreapp3.1/TechTalk.SpecRun.dll"
+      ]
+    },
+    "SpecRun.SpecFlow/3.9.7": {
+      "sha512": "K8SkFD2bhWZILCLf7bULVd0macs+eyE4FN6x6ZEfamMzkGNWbD7UIe6OKrwE6y8wW9kXYSsX/4CnoXumkW8ydw==",
+      "type": "package",
+      "path": "specrun.specflow/3.9.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/specflow-icon.png",
+        "specrun.specflow.3.9.7.nupkg.sha512",
+        "specrun.specflow.nuspec"
+      ]
+    },
+    "SpecRun.SpecFlow.3-9-0/3.9.7": {
+      "sha512": "qLAZegiuis4JOcEVhtFIYEiD9f6M/WZVbJatSSRnIM2+epmeOg0U9YkvXFfge6uBmJd4pH5W+Xg4cR3JfgoHew==",
+      "type": "package",
+      "path": "specrun.specflow.3-9-0/3.9.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SpecFlow.Plus.Runner.AssemblyHooks.cs",
+        "build/SpecFlow.Plus.Runner.AssemblyHooks.vb",
+        "build/SpecRun.SpecFlow.3-9-0.props",
+        "build/SpecRun.SpecFlow.3-9-0.targets",
+        "build/net471/SpecRun.Generator.SpecFlowPlugin.dll",
+        "build/net471/SpecRun.Generator.SpecFlowPlugin.pdb",
+        "build/net471/TechTalk.SpecRun.Common.dll",
+        "build/netstandard2.0/BoDi.dll",
+        "build/netstandard2.0/Cucumber.Messages.dll",
+        "build/netstandard2.0/Gherkin.dll",
+        "build/netstandard2.0/Google.Protobuf.dll",
+        "build/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "build/netstandard2.0/Newtonsoft.Json.dll",
+        "build/netstandard2.0/SpecFlow.Internal.Json.dll",
+        "build/netstandard2.0/SpecRun.Generator.SpecFlowPlugin.deps.json",
+        "build/netstandard2.0/SpecRun.Generator.SpecFlowPlugin.dll",
+        "build/netstandard2.0/SpecRun.Generator.SpecFlowPlugin.pdb",
+        "build/netstandard2.0/SpecRun.Runtime.SpecFlowPlugin.dll",
+        "build/netstandard2.0/System.AppContext.dll",
+        "build/netstandard2.0/System.Buffers.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "build/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "build/netstandard2.0/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/System.Linq.Expressions.dll",
+        "build/netstandard2.0/System.Linq.dll",
+        "build/netstandard2.0/System.Memory.dll",
+        "build/netstandard2.0/System.Numerics.Vectors.dll",
+        "build/netstandard2.0/System.ObjectModel.dll",
+        "build/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "build/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "build/netstandard2.0/System.Reflection.Emit.dll",
+        "build/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/netstandard2.0/System.Runtime.Loader.dll",
+        "build/netstandard2.0/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/System.Security.AccessControl.dll",
+        "build/netstandard2.0/System.Security.Cryptography.OpenSsl.dll",
+        "build/netstandard2.0/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "build/netstandard2.0/System.Security.Permissions.dll",
+        "build/netstandard2.0/System.Security.Principal.Windows.dll",
+        "build/netstandard2.0/System.Security.Principal.dll",
+        "build/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "build/netstandard2.0/System.Threading.dll",
+        "build/netstandard2.0/TechTalk.SpecFlow.Generator.dll",
+        "build/netstandard2.0/TechTalk.SpecFlow.Parser.dll",
+        "build/netstandard2.0/TechTalk.SpecFlow.Utils.dll",
+        "build/netstandard2.0/TechTalk.SpecFlow.dll",
+        "build/netstandard2.0/TechTalk.SpecRun.Common.dll",
+        "build/netstandard2.0/TechTalk.SpecRun.dll",
+        "content/SpecRunTestProfile.xsd",
+        "content/SpecRunTestProfile_2011_09.xsd",
+        "content/runtests.cmd.pp",
+        "contentFiles/any/any/SpecRunTestProfile.xsd",
+        "contentFiles/any/any/SpecRunTestProfile_2011_09.xsd",
+        "contentFiles/any/any/runtests.cmd.pp",
+        "images/specflow-icon.png",
+        "lib/net461/SpecRun.Runtime.SpecFlowPlugin.dll",
+        "lib/net461/TechTalk.SpecRun.Common.dll",
+        "lib/net461/TechTalk.SpecRun.dll",
+        "lib/netstandard2.0/SpecRun.Runtime.SpecFlowPlugin.dll",
+        "lib/netstandard2.0/TechTalk.SpecRun.Common.dll",
+        "lib/netstandard2.0/TechTalk.SpecRun.dll",
+        "readme.txt",
+        "specrun.specflow.3-9-0.3.9.7.nupkg.sha512",
+        "specrun.specflow.3-9-0.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.0": {
+      "sha512": "csAJe24tWCOTO/rXoJAuBGuOq7ZdHY60XtC6b/hNMHT9tuX+2J9HK7nciLEtNvnrRLMxBACLXO3R4y5+kCduMA==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/uap10.0.16300/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "ref/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "ref/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "ref/uap10.0.16300/_._",
+        "system.threading.tasks.extensions.4.5.0.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.4.0": {
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net461/System.ValueTuple.xml",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.4.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "FluentAssertions >= 6.2.0",
+      "Microsoft.NET.Test.Sdk >= 17.0.0",
+      "NUnit3TestAdapter >= 4.3.1",
+      "SpecFlow.NUnit >= 3.9.74",
+      "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
+      "SpecFlow.Tools.MsBuild.Generation >= 3.9.74",
+      "SpecRun.SpecFlow >= 3.9.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MuntaqaM\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MuntaqaM\\source\\repos\\SpecFlowDemoProject\\SpecFlowDemoProject\\SpecFlowDemoProject.csproj",
+      "projectName": "SpecFlowDemoProject",
+      "projectPath": "C:\\Users\\MuntaqaM\\source\\repos\\SpecFlowDemoProject\\SpecFlowDemoProject\\SpecFlowDemoProject.csproj",
+      "packagesPath": "C:\\Users\\MuntaqaM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MuntaqaM\\source\\repos\\SpecFlowDemoProject\\SpecFlowDemoProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MuntaqaM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[17.0.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.3.1, )"
+          },
+          "SpecFlow.NUnit": {
+            "target": "Package",
+            "version": "[3.9.74, )"
+          },
+          "SpecFlow.Plus.LivingDocPlugin": {
+            "target": "Package",
+            "version": "[3.9.57, )"
+          },
+          "SpecFlow.Tools.MsBuild.Generation": {
+            "target": "Package",
+            "version": "[3.9.74, )"
+          },
+          "SpecRun.SpecFlow": {
+            "target": "Package",
+            "version": "[3.9.7, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
